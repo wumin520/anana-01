@@ -1,0 +1,490 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.standardList {
+  :global {
+    .ant-card-head {
+      border-bottom: none;
+    }
+    .ant-card-head-title {
+      padding: 24px 0;
+      line-height: 32px;
+    }
+    .ant-card-extra {
+      padding: 24px 0;
+    }
+    .ant-list-pagination {
+      margin-top: 24px;
+      text-align: right;
+    }
+    .ant-avatar-lg {
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+    }
+  }
+  .headerInfo {
+    position: relative;
+    text-align: center;
+    & > span {
+      display: inline-block;
+      margin-bottom: 4px;
+      color: @text-color-secondary;
+      font-size: @font-size-base;
+      line-height: 22px;
+    }
+    & > p {
+      margin: 0;
+      color: @heading-color;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    & > em {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 56px;
+      background-color: @border-color-split;
+    }
+    & > a {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      height: 56px;
+      background-color: #fff;
+    }
+  }
+  .listContent {
+    font-size: 0;
+    .listContentItem {
+      display: inline-block;
+      margin-left: 40px;
+      color: @text-color-secondary;
+      font-size: @font-size-base;
+      vertical-align: middle;
+      > span {
+        line-height: 20px;
+      }
+      > p {
+        margin-top: 4px;
+        margin-bottom: 0;
+        line-height: 22px;
+      }
+    }
+  }
+  .extraContentSearch {
+    width: 272px;
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  .standardList {
+    :global {
+      .ant-list-item-content {
+        display: block;
+        flex: none;
+        width: 100%;
+      }
+      .ant-list-item-action {
+        margin-left: 0;
+      }
+    }
+    .listContent {
+      margin-left: 0;
+      & > div {
+        margin-left: 0;
+      }
+    }
+    .listCard {
+      :global {
+        .ant-card-head-title {
+          overflow: visible;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .standardList {
+    .extraContentSearch {
+      width: 100%;
+      margin-left: 0;
+    }
+    .headerInfo {
+      margin-bottom: 16px;
+      & > em {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .standardList {
+    .listContent {
+      & > div {
+        display: block;
+      }
+      & > div:last-child {
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+  .listCard {
+    :global {
+      .ant-radio-group {
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) and (min-width: @screen-md) {
+  .standardList {
+    .listContent {
+      & > div {
+        display: block;
+      }
+      & > div:last-child {
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xl) {
+  .standardList {
+    .listContent {
+      & > div {
+        margin-left: 24px;
+      }
+      & > div:last-child {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .standardList {
+    .listContent {
+      text-align: right;
+      & > div:last-child {
+        top: 0;
+      }
+    }
+  }
+}
+
+.standardListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 32px;
+        padding-top: 4px;
+      }
+    }
+  }
+}
+
+.formResult {
+  width: 100%;
+  [class^='title'] {
+    margin-bottom: 8px;
+  }
+}
+
+.table-operations {
+  margin-bottom: 16px;
+}
+
+.table-operations > button {
+  margin-right: 8px;
+}
+
+.FreezePro {
+  display: flex;
+  align-items: center;
+
+  .proImg {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+}
+
+.title {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.payMoney {
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.unit {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.payBlock {
+  width: 100%;
+  color: #000;
+  .payBlock_center {
+    padding: 0 0 24px;
+    text-align: center;
+    border-bottom: 1px solid #f0f2f5;
+    .payBlock_top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 28px;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: PingFang-SC-Regular, sans-serif;
+      .money {
+        color: #f5222d;
+        font-weight: 400;
+        font-size: 24px;
+        font-family: PingFang-SC-Regular, sans-serif;
+      }
+    }
+
+    .payInfo {
+      width: 350px;
+      margin: 0 auto 20px;
+      padding: 20px;
+      border: 1px solid #000;
+      & img {
+        width: 100%;
+      }
+      .code_desc {
+        color: rgba(0, 0, 0, 0.45);
+        font-weight: 400;
+        font-size: 16px;
+        opacity: 0.75;
+      }
+    }
+  }
+  .payBlock_bottom {
+    padding-top: 24px;
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, sans-serif;
+    opacity: 0.75;
+  }
+}
+
+.formBlock {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.information {
+  line-height: 22px;
+  :global {
+    .ant-row:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  .label {
+    padding-right: 8px;
+    color: @heading-color;
+    text-align: right;
+    @media screen and (max-width: @screen-sm) {
+      text-align: left;
+    }
+  }
+}
+
+.money {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 14px;
+}
+
+.uppercase {
+  font-size: 12px;
+}
+.stepForm {
+  max-width: 500px;
+  margin: 40px auto 0;
+}
+
+.stepFormText {
+  margin-bottom: 24px;
+  :global {
+    .ant-form-item-label,
+    .ant-form-item-control {
+      line-height: 22px;
+    }
+  }
+}
+
+.result {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 24px 0 8px;
+}
+
+.desc {
+  padding: 0 56px;
+  color: @text-color-secondary;
+  h3 {
+    margin: 0 0 12px 0;
+    color: @text-color-secondary;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  h4 {
+    margin: 0 0 4px 0;
+    color: @text-color-secondary;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .desc {
+    padding: 0;
+  }
+}
+
+.recharge_actBlock {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0;
+
+  .re_act_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 90px;
+    margin-right: 20px;
+    border: 1px solid #e5e5e5;
+
+    .reward {
+      color: #1890ff;
+    }
+    .triangle_topRight {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      width: 0;
+      height: 0;
+      border-top: 30px solid #1890ff;
+      border-left: 50px solid transparent;
+    }
+    .triangle_icon {
+      position: absolute;
+      top: 3px;
+      right: 6px;
+      z-index: 1;
+      color: #fff;
+    }
+    .autoMoney {
+      color: #1890ff;
+      font-size: 20px;
+    }
+  }
+
+  .selectedItem {
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+  }
+}
+
+.col2F54EB {
+  color: #2f54eb;
+}
+
+.VIP_block {
+  margin-top: 20px;
+
+  .top_tabs {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, sans-serif;
+
+    .tab {
+      position: relative;
+      width: 100%;
+      height: 52px;
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 52px;
+      text-align: center;
+      background: rgba(250, 250, 250, 1);
+      border-top: 1px solid rgba(232, 232, 232, 1);
+      border-radius: 2px 2px 0 0;
+
+      &.selectedItem {
+        color: rgba(0, 0, 0, 0.85);
+        background-color: #fff;
+        border-top: 4px solid rgba(47, 84, 235, 1);
+        border-right: 1px solid rgba(232, 232, 232, 1);
+        border-left: 1px solid rgba(232, 232, 232, 1);
+      }
+    }
+  }
+
+  .select_Vip_info {
+    padding: 64px 0 0 240px;
+
+    .label_title {
+      display: inline-block;
+      width: 80px;
+      margin-bottom: 24px;
+      margin-left: 5px;
+      color: #999;
+      text-align: right;
+    }
+
+    .label_title2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .describe {
+    margin-top: 20px;
+    padding-top: 10px;
+    color: #999;
+    border-top: 1px solid #e8e8e8;
+  }
+
+  .paid_block {
+    margin: 64px 0 64px 323px;
+
+    .btn_paid {
+      width: 176px;
+      height: 40px;
+      margin-bottom: 32px;
+      border-radius: 4px;
+    }
+  }
+}

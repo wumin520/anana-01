@@ -1,0 +1,122 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+.a_nav {
+  color: #fff;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.ant-col {
+  text-align: right;
+}
+.nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  line-height: 64px;
+  // padding: 16px 0;
+  // background: rgba(47, 84, 235, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  .content {
+    width: 1128px;
+    margin: 0 auto;
+    .nav_img {
+      width: 100px;
+      height: 32px;
+      margin: 16px 0;
+      background: url('https://cdn.fengjiangdali.com/image/static/c3861bbb5b4d7284f3137b6a2653f72a2ce0213e.jpg')
+        no-repeat;
+      background-size: 100px 32px;
+    }
+  }
+}
+
+.nav:hover,
+.nav:focus,
+.nav:focus-within {
+  background: #fff !important;
+  border-bottom: 1px solid #fff !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.04) !important;
+  opacity: 1 !important;
+  .nav_img {
+    background: url('https://cdn.fengjiangdali.com/image/static/c3861bbb5b4d7284f3137b6a2653f72a2ce0213e.jpg')
+      no-repeat;
+    background-size: 100px 32px;
+  }
+  .a_nav {
+    color: #000;
+  }
+  .a_nav:hover {
+    color: rgba(30, 79, 255, 1);
+  }
+}
+.menu_box {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  padding: 40px 156px;
+  background-color: #fff;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.04) inset;
+  .menu_content {
+    display: flex;
+    justify-content: space-between;
+    width: 1128px;
+    margin: 0 auto;
+    .menu_wx {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      .menu_img {
+        width: 32px;
+        height: 32px;
+      }
+      .hint {
+        margin-left: 8px;
+        .title {
+          margin-bottom: 4px;
+          color: rgba(0, 0, 0, 0.65);
+          font-weight: 400;
+          font-size: 14px;
+          // font-family: PingFang-SC-Regular;
+        }
+        .desc {
+          width: 128px;
+          color: rgba(0, 0, 0, 0.45);
+          font-weight: 400;
+          font-size: 12px;
+          // font-family: PingFang-SC-Regular;
+        }
+      }
+    }
+    .menu_wx:hover {
+      background: rgba(245, 245, 245, 1);
+    }
+  }
+}
+
+.navFixtop {
+  top: 0;
+}
+
+.navBgWhite {
+  background: #fff !important;
+  border-bottom: 1px solid #fff !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.04) !important;
+  opacity: 1 !important;
+  .nav_img {
+    width: 100px;
+    height: 32px;
+    margin: 16px 0;
+    background: url('https://cdn.fengjiangdali.com/image/static/c3861bbb5b4d7284f3137b6a2653f72a2ce0213e.jpg')
+      no-repeat !important;
+    background-size: 100px 32px !important;
+  }
+  .a_nav {
+    color: #000;
+  }
+  .a_nav:hover {
+    color: rgba(30, 79, 255, 1);
+  }
+}

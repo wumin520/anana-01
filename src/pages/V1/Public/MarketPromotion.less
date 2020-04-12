@@ -1,0 +1,276 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+:global {
+  .ant-carousel .slick-slide img {
+    display: inline-block;
+    width: auto;
+    height: 493px;
+  }
+  .ant-modal {
+    .ant-modal-content {
+      background-color: transparent !important;
+      box-shadow: 0 0 0 transparent !important;
+      .ant-modal-close {
+        color: #fff;
+        .ant-modal-close-x {
+          font-size: 30px;
+        }
+      }
+      .ant-modal-body {
+        font-size: 24px;
+      }
+    }
+  }
+}
+.marketPromotion {
+  overflow: hidden;
+  text-align: center;
+  background: #f6f7f8;
+
+  .bgColor {
+    margin-top: 64px;
+    padding: 103px 156px;
+    background: url('https://cdn.fengjiangdali.com/image/static/48aa88cbb85506fc323450aa303443d4b82ff87e.jpg')
+      no-repeat;
+    background-size: 100% 100%;
+    .mp_banner {
+      width: 1128px;
+      margin: 0 auto;
+      text-align: left;
+      & > .title {
+        margin-bottom: 16px;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        font-size: 38px;
+        font-family: PingFangSC-Medium, sans-serif;
+      }
+
+      & > .subtitle {
+        color: rgba(0, 0, 0, 0.65);
+        font-weight: 400;
+        font-size: 20px;
+        font-family: PingFang-SC-Regular, sans-serif;
+      }
+      & > .subtitle2 {
+        margin-bottom: 40px;
+      }
+      .btn {
+        display: inline-block;
+        box-sizing: content-box;
+        width: 192px;
+        height: 40px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 500;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, sans-serif;
+        line-height: 40px;
+        text-align: center;
+        background: rgba(24, 144, 255, 1);
+        border-radius: 4px;
+      }
+    }
+  }
+  .center {
+    background: #fff;
+    .mp_center {
+      width: 1128px;
+      margin: 0 auto;
+      padding: 80px 0 120px;
+      overflow: hidden;
+      & > .title {
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        font-size: 30px;
+        font-family: PingFangSC-Medium, sans-serif;
+        // line-height: 40px;
+      }
+
+      & > .subtitle {
+        margin-top: 16px;
+        color: rgba(0, 0, 0, 0.45);
+        font-weight: 400;
+        font-size: 16px;
+        font-family: PingFang-SC-Regular, sans-serif;
+        line-height: 24px;
+      }
+
+      .programs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 80px;
+
+        .program {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 32px;
+
+          & > img {
+            width: 64px;
+            height: 64px;
+          }
+
+          & > span {
+            margin: 24px 0 16px;
+            color: rgba(0, 0, 0, 0.65);
+            font-weight: 500;
+            font-size: 20px;
+            font-family: PingFangSC-Medium, sans-serif;
+            line-height: 32px;
+          }
+          & > p {
+            width: 296px;
+            color: rgba(0, 0, 0, 0.45);
+            font-weight: 400;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, sans-serif;
+          }
+        }
+      }
+    }
+  }
+  .service {
+    background: #e6f7ff;
+    .advantage_block {
+      width: 1128px;
+      margin: 0 auto;
+      padding: 80px 0 112px;
+      overflow: hidden;
+      & > .title {
+        margin-bottom: 80px;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        font-size: 30px;
+        font-family: PingFangSC-Medium, sans-serif;
+      }
+
+      .advantages {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        .advantage {
+          padding: 32px;
+          overflow: hidden;
+          border-radius: 4px;
+          & > .desc1 {
+            color: rgba(24, 144, 255, 1);
+            font-weight: 500;
+            font-size: 38px;
+            font-family: HelveticaNeue-Medium, sans-serif;
+          }
+          & > .desc2 {
+            color: rgba(0, 0, 0, 0.45);
+            font-size: 14px;
+            font-family: PingFangSC-Regular, sans-serif;
+          }
+
+          & > .desc {
+            padding: 32px 0;
+            color: rgba(0, 0, 0, 0.65);
+            font-weight: 400;
+            font-size: 16px;
+            font-family: PingFang-SC-Regular, sans-serif;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .bus {
+      width: 640px;
+      height: 320px;
+      margin: 0 auto;
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .case_block {
+    padding: 80px 0 120px;
+    overflow: hidden;
+    background: #fff;
+
+    & > .title {
+      margin-bottom: 80px;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 500;
+      font-size: 30px;
+      font-family: PingFangSC-Medium, sans-serif;
+    }
+    .earn {
+      display: flex;
+      justify-content: space-between;
+      width: 1128px;
+      margin: 0 auto;
+      .left_menu {
+        padding-top: 60px;
+      }
+      .rightContent {
+        width: 776px;
+        padding: 32px 32px 0;
+        background: rgba(250, 250, 250, 1);
+        border: 1px solid rgba(217, 217, 217, 1);
+        border-radius: 4px;
+        .busMessage {
+          margin-bottom: 32px;
+          .avater {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+          }
+          .nick_name {
+            margin: 18px 0 32px 0;
+            color: rgba(0, 0, 0, 0.65);
+            font-weight: 500;
+            font-size: 20px;
+            font-family: PingFangSC-Medium, sans-serif;
+          }
+          .describe {
+            color: rgba(0, 0, 0, 0.45);
+            font-size: 16px;
+            font-family: PingFangSC-Regular, sans-serif;
+            text-align: left;
+          }
+        }
+        .examples {
+          display: flex;
+          flex-wrap: wrap;
+          .example {
+            position: relative;
+            width: 214px;
+            height: 214px;
+            margin: 0 28px 28px 0;
+            overflow: hidden;
+            background-size: 100px 100px;
+            border-radius: 4px;
+
+            &:nth-child(3n + 3) {
+              margin-right: 0;
+            }
+
+            .bgImg {
+              width: 100%;
+              // height: 100%;
+              border-radius: 4px;
+            }
+            .mode {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 214px;
+              height: 214px;
+              padding: 176px 0 0 104px;
+              color: #fff;
+              font-size: 16px;
+              background: rgba(0, 0, 0, 0.65);
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.nav_block {
+  width: 100%;
+  background: #001529;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1128px;
+  height: 32px;
+  margin: 0 auto;
+
+  > div {
+    display: flex;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 400;
+    font-size: 12px;
+    font-family: PingFang-SC-Regular, sans-serif;
+    line-height: 32px;
+
+    a.headNavWord {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  .loginInfo {
+    margin: 0 18px 0 60px;
+
+    a.loginHello {
+      color: #13c2c2;
+    }
+  }
+
+  .navRight {
+    div {
+      margin-left: 24px;
+    }
+  }
+}
